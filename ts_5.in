@@ -1,0 +1,181 @@
+b
+> phx_net 192.168.59.0 255
+> flagstaff_net 172.35.4.0 1000
+> dc_net2 198.162.50.0 100
+> network1 10.1.1.0 20
+> eraunet 172.45.233.0 50
+> network1 10.1.1.0 20
+> dc_net2 198.162.50.0 100
+> eraunet 172.45.233.0 50
+> prescott_net 192.168.0.0 500
+> local_net 10.10.1.0 30
+# 0
+v Cisco
+m ASR1001
+n 4
+t 1000
+e 160
+s 1.71 17.3 18.5
+c Memory 10 4000
+c Processor 60 10000
+c Software 60 20000
+r 10
+f 1400
+i 0
++
+v Cisco
+m Nexus6000
+n 384
+t 1000
+s 1.75 17.3 30
+c Heatsink 20 2500
+c Interfacecards 80 20000
+r 8
+f 1500
+i 2
+d
++
+# 4
+v Juniper
+m MX5
+n 4
+t 10000
+e 500
+s 3.5 17.5 23.5
+c Heatsink 10 1000
+c Processor 30 4000.75
+c Software 20 3600.50
+c Memory 10 4999.99
+c TCAM 30 3678.44
+c Interfacecards 40 10000
++
+# 6
+v Juniper
+m EX2200
+n 48
+t 1000
+e 76
+s 1.75 17.4 10
+c Heatsink 20 1000
+c Processor 25 3000
+c Software 20 2500
+c Memory 10 4999.99
+c TCAM 30 3678.44
+c Interfacecards 40 10000
+i 0
+r 10
+f 84
++
+# 4
+r 7
+f 1000
+i 5
+-
+# 7
+v Brocade
+m BMCe1
+n 48
+t 100000
+e 208
+s 8.71 17.2 23
+c Processor 30 4000.75
+c Software 20 3600.56
+c Memory 10 4999.66
+i 3
+f 15000
+r 5
+d
++
+# 21
+v Asus
+m RTAC66U
+n 8
+e 9.5
+s 12.5 7.4 4
+c Processor 2 48.99
+c Software 1 50.99
+c Memory 3 20.99
+w 802.11a/b/g
+x 1500
+f 4000
+i 7
++
+# 39
+v Dlink
+m AC1900
+n 8
+e 7.8
+s 12.5 7.4 4
+c Processor 2 48.99
+c Software 0.5 50.99
+c Memory 2.5 20.99
+x 1900
+f 5000
+i 7
+# 40
+v Brocade
+m DMZv1
+n 24
+t 10000
+e 250
+s 8.2 12.4 15
+c Processor 20 3500
+c Software 10 6100.56
+c Memory 20 3999.66
+i 3
+d
++
+v Cisco
+m ASR5001
+n 8
+t 10000
+e 125
+s 1.51 15.3 16.5
+c Memory 10 4000
+c Processor 60 10000
+c Software 60 20000
+r 10
+f 1400
+i 0
++
+# 8
+v Brocade
+m DMAv1
+n 24
+t 10000
+f 1500
+r 4
+e 250
+s 8.2 12.4 15
+c Processor 30 3500
+c Software 5 6100.56
+c Memory 35 3999.66
+i 3
+-
+# 20
+v Asus
+m RT-AC88U
+n 8
+e 5
+s 11.8 7.4 3.3
+c Processor 1 75
+c Software 0.5 100.56
+c Memory 1 100.66
+w 802.11n
+x 2167
+f 4000
+d
++
+# 39
+w 802.11a/b/g
+d
+a
+*
+b
+q
+0
+
+
+
+
+
